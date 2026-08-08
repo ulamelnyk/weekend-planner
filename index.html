@@ -2,9 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Planner</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <main class="container">
+
+        <h1>Weekend Planner</h1>
+
+        <p class="subtitle">
+            Not sure what to do this weekend?
+            Let us plan it for you.
+        </p>
+
+        <!-- Mood Selection -->
+        <section class="mood-section">
+
+            <h2>Choose Your Mood</h2>
+
+            <div class="mood-buttons">
+
+                <button class="mood-btn" data-mood="lazy">
+                    Lazy
+                </button>
+
+                <button class="mood-btn" data-mood="active">
+                    Active
+                </button>
+
+                <button class="mood-btn" data-mood="adventurous">
+                    Adventurous
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Budget Selection -->
+        <section class="budget-section">
+
+            <h2>Choose Your Budget</h2>
+
+            <select id="budget">
+                <option value="low">$</option>
+                <option value="medium">$$</option>
+                <option value="high">$$$</option>
+            </select>
+
+        </section>
+
+        <!-- Generate Button -->
+        <button id="generate-btn">
+            Generate Plan
+        </button>
+
+        <!-- Result Card -->
+        <section class="result-card">
+
+            <h2>Your Weekend Plan</h2>
+
+            <div id="plan-details">
+                <p>
+                    <strong>Destination:</strong>
+                    <span id="destination">Local Park</span>
+                </p>
+
+                <p>
+                    <strong>Activity:</strong>
+                    <span id="activity">Ride a Bike</span>
+                </p>
+
+                <p>
+                    <strong>Reward:</strong>
+                    <span id="reward">+15 Energy</span>
+                </p>
+
+                <p>
+                    <strong>Risk:</strong>
+                    <span id="risk">Sore Legs Tomorrow</span>
+                </p>
+
+                <p>
+                    <strong>Budget:</strong>
+                    <span id="budget-result">$</span>
+                </p>
+            </div>
+
+            <button id="try-again-btn">
+                Try Again
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
