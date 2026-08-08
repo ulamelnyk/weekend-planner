@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B8E5B8;
+    color: #253D2C;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #253D2C;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #253D2C;
+    margin-bottom: 35px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #253D2C;
+}
+
+.mood-section {
+    margin-bottom: 25px;
+}
+
+.mood-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.mood-btn {
+    width: 220px;
+    height: 50px;
+}
+
+button,
+select {
+    background-color: #B8E5B8;
+    color: #253D2C;
+    border: 1px solid #253D2C;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+button:hover,
+select:hover {
+    background-color: #253D2C;
+    color: #B8E5B8;
+}
+
+button {
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: opacity 0.2s ease,
+                background-color 0.2s ease,
+                color 0.2s ease;
+}
+
+button:active {
+    background-color: #253D2C;
+    color: #B8E5B8;
+    opacity: 1;
+}
+
+select {
+    width: 240px;
+    height: 42px;
+    outline: none;
+    cursor: pointer;
+}
+
+.budget-section {
+    margin-bottom: 30px;
+}
+
+#budget {
+    padding: 10px 15px;
+}
+
+#generate-btn {
+    margin-bottom: 30px;
+}
+
+.result-card {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #253D2C;
+    text-align: left;
+}
+
+.result-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-card p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+#plan-details {
+    text-align: center;
+    color: #253D2C;
+}
+
+#try-again-btn {
+    display: block;
+    margin: 20px auto 0;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px;
+    }
+
+    .mood-buttons {
+        flex-direction: column;
+    }
+
+    .mood-btn {
+        width: 100%;
+    }
+
+    #generate-btn {
+        width: 100%;
+    }
+}
