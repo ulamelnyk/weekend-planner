@@ -53,6 +53,11 @@ h2 {
     height: 50px;
 }
 
+.mood-btn.active {
+    background-color: #253D2C;
+    color: #B8E5B8;
+}
+
 button,
 select {
     background-color: #B8E5B8;
@@ -63,9 +68,10 @@ select {
 }
 
 button:hover,
-select:hover {
+select:hover{
     background-color: #253D2C;
     color: #B8E5B8;
+    opacity: 0.8;
 }
 
 button {
@@ -76,7 +82,8 @@ button {
                 color 0.2s ease;
 }
 
-button:active {
+button:active,
+select:active{
     background-color: #253D2C;
     color: #B8E5B8;
     opacity: 1;
@@ -94,7 +101,21 @@ select {
 }
 
 #budget {
-    padding: 10px 15px;
+    padding: 0 25px;
+
+    background-color: #B8E5B8;
+    color: #253D2C;
+
+    border: 1px solid #253D2C;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
 }
 
 #generate-btn {
@@ -102,11 +123,13 @@ select {
 }
 
 .result-card {
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
     padding: 25px;
     border: 1px solid #253D2C;
     text-align: left;
+    display: none;
 }
 
 .result-card h2 {
@@ -135,15 +158,14 @@ select {
         padding: 25px;
     }
 
+    .mood-btn,
+    #generate-btn,
+    #budget {
+        width: 100%;
+
+    }
+
     .mood-buttons {
         flex-direction: column;
-    }
-
-    .mood-btn {
-        width: 100%;
-    }
-
-    #generate-btn {
-        width: 100%;
     }
 }
