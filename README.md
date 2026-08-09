@@ -42,6 +42,28 @@ weekend-planner/
 └── README.md
 ```
 
+## Installation and Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/weekend-planner.git
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd weekend-planner
+```
+
+3. Open `index.html` in your web browser.
+
+Alternatively, you can use the VS Code Live Server extension:
+
+- Open the project in VS Code
+- Right-click `index.html`
+- Select **Open with Live Server**
+
 ## How It Works
 
 1. Select a mood.
